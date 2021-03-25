@@ -79,34 +79,29 @@ const promptUser = () => {
             type: 'input',
             name: 'email',
             message: 'Contact Info: What is your email address?'
-        },
-        {
-            type: 'confirm',
-            name: 'contactInstructionsConfirm',
-            message: 'Contact Info: Do you have any special instructions on how you would like to be contacted?',
-            default: false
-        },
-        {
-            type: 'input',
-            name: 'contactInstructions',
-            message: 'Provide instructions on the best way to contact you:',
-            when: ({ contactInstructionsConfirm }) => {
-                if (contactInstructionsConfirm) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
         }
     ]);
 };
 
+promptUser().then(projectData => {
+    //push data to questions array
+    // questions.push(projectData);
+    // console.log(questions);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+    const yourReadMe = generateMarkdown(projectData);
 
-// TODO: Create a function to initialize app
-function init() { }
+    // TODO: Create a function to write README file
+    fs.writeFile('yourREADME.md', yourReadMe, err => {
+        if (err) throw new Error(err);
 
-// Function call to initialize app
-init();
+        console.log('Page created! Check out yourREADME.md to see it!');
+    });
+});
+
+
+
+// // TODO: Create a function to initialize app
+// function init() { }
+
+// // Function call to initialize app
+// init();
