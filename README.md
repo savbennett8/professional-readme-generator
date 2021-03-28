@@ -2,7 +2,9 @@
 ***
 Are you looking for a quick and easy way to get your readme.md file setup and looking nice, with little to no effort on your part? Look no further! This application provides all the structure and setup you need to get your file generated. All it needs is for you to answer a few questions about your project from the command-line so it can use that information to dynamically generate your professional-looking readme.md file!
 
-## 'What information will I need to provide?'
+## Installation
+Make sure you're in the root of the directory and run 'node index' from the command line. 
+### 'What information will I need to provide?'
 - Your project title.
 - A detailed description of your project.
 - Installation: 
@@ -17,3 +19,9 @@ Are you looking for a quick and easy way to get your readme.md file setup and lo
     Go the extra mile and write tests for your application. Then provide examples on how to run them.
 - Questions:
     Provide your GitHub link and email address so that they can reach out to you if they have any questions about your project.
+
+## Usage
+Answer the question prompts with as much information as you can provide. I suggest reviewing the previous 'Installation' section to prepare yourself for what information you'll need to provide; maybe even write/type out what you want your responses to be so you can just throw the information into the command line. 
+
+### Video Demo
+<!-- video link here -->
