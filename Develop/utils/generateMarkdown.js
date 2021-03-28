@@ -25,19 +25,19 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license === 'MIT') {
-        return '<a href="https://opensource.org/licenses/MIT">License Link</a>';
+        return '[License Link](https://opensource.org/licenses/MIT)';
     }
     else if (license === 'Apache-2.0') {
-        return '<a href="https://opensource.org/licenses/Apache-2.0">License Link</a>';
+        return '[License Link](https://opensource.org/licenses/Apache-2.0)';
     }
     else if (license === 'BSD-3-Clause') {
-        return '<a href="https://opensource.org/licenses/BSD-3-Clause">License Link</a>';
+        return '[License Link](https://opensource.org/licenses/BSD-3-Clause)';
     }
     else if (license === 'BSD-2-Clause') {
-        return '<a href="https://opensource.org/licenses/BSD-2-Clause">License Link</a>';
+        return '[License Link](https://opensource.org/licenses/BSD-2-Clause)';
     }
     else if (license === 'GPL') {
-        return '<a href="https://opensource.org/licenses/gpl-3.0">License Link</a>';
+        return '[License Link](https://opensource.org/licenses/gpl-3.0)';
     }
     else if (license === 'None') {
         return ' ';
@@ -63,7 +63,15 @@ function generateMarkdown(projectData) {
 ${renderLicenseBadge(projectData.license)}
 ## **Desctription**
 ${projectData.description}
-## **Installation**
+## **Table of Contents**
+Installation
+<br> Usage
+<br> License
+<br> Contributing
+<br> Tests
+<br> Contact Info
+<br> Questions
+## Installation
 ${projectData.installation}
 ## Usage
 ${projectData.usage}
@@ -73,7 +81,7 @@ ${projectData.contributing}
 ## Tests
 ${projectData.tests}
 ## Contact Info
-<a href="https://github.com/${projectData.github}">GitHub Profile</a>
+[GitHub Profile](https://github.com/${projectData.github})
 <br> ${projectData.email}
 `;
 }
