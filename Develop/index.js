@@ -58,7 +58,7 @@ const promptUser = () => {
             message: 'Provide instructions and examples for use.'
         },
         {
-            type: 'list',
+            type: 'checkbox',
             name: 'license',
             message: 'An open source license protects contributors and users. Please choose from one of the following licenses:',
             choices: ['MIT', 'Apache-2.0', 'BSD-3-Clause', 'BSD-2-Clause', 'GPL']
