@@ -64,12 +64,12 @@ ${renderLicenseBadge(projectData.license)}
 ## **Description**
 ${projectData.description}
 ## **Table of Contents**
-- [Installation](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#installation)
-- [Usage](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#usage)
-- [License](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#license)
-- [Contributing](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#contributing)
-- [Tests](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#tests)
-- [Questions](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/yourREADME.md#questions)
+- [Installation](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#installation)
+- [Usage](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#usage)
+- [License](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#license)
+- [Contributing](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#contributing)
+- [Tests](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#tests)
+- [Questions](https://github.com/savbennett8/professional-readme-generator/blob/main/yourREADME.md#questions)
 ## Installation
 ${projectData.installation}
 ## Usage
