@@ -82,15 +82,16 @@ const promptUser = () => {
             type: 'input',
             name: 'email',
             message: 'Contact Info: What is your email address?'
-        }
+        },
+        {
+            type: 'input',
+            name: 'specialInstructions',
+            message: 'Any instructions on how to reach you with additional questions? Enter those here or click "Enter" to skip.'
+        },
     ]);
 };
 
 promptUser().then(projectData => {
-    //push data to questions array
-    // questions.push(projectData);
-    // console.log(questions);
-
     const yourReadMe = generateMarkdown(projectData);
 
     // TODO: Create a function to write README file

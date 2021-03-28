@@ -64,25 +64,25 @@ ${renderLicenseBadge(projectData.license)}
 ## **Desctription**
 ${projectData.description}
 ## **Table of Contents**
-- [Installation](link)
-- [Usage](link)
-- [License](link)
-- [Contributing](link)
-- [Tests](link)
-- [Contact Info](link)
-- [Questions](link)
+- [Installation](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#installation)
+- [Usage](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#usage)
+- [License](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#license)
+- [Contributing](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#contributing)
+- [Tests](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#tests)
+- [Questions](https://github.com/savbennett8/professional-readme-generator/blob/feature/table-of-contents/Develop/yourREADME.md#questions)
 ## Installation
 ${projectData.installation}
 ## Usage
 ${projectData.usage}
-<br> ${renderLicenseSection(projectData.license)}
+${renderLicenseSection(projectData.license)}
 ## Contributing
 ${projectData.contributing}
 ## Tests
 ${projectData.tests}
-## Contact Info
+### Questions
 [GitHub Profile](https://github.com/${projectData.github})
 <br> ${projectData.email}
+<br> ${projectData.specialInstructions}
 `;
 }
 
