@@ -64,13 +64,13 @@ ${renderLicenseBadge(projectData.license)}
 ## **Desctription**
 ${projectData.description}
 ## **Table of Contents**
-Installation
-<br> Usage
-<br> License
-<br> Contributing
-<br> Tests
-<br> Contact Info
-<br> Questions
+- [Installation](link)
+- [Usage](link)
+- [License](link)
+- [Contributing](link)
+- [Tests](link)
+- [Contact Info](link)
+- [Questions](link)
 ## Installation
 ${projectData.installation}
 ## Usage
