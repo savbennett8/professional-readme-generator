@@ -2,8 +2,10 @@
 
 //requires inquierer from npm
 const inquirer = require('inquirer');
+//requires file system from node
+const fs = require('fs');
 //imports data from the required relative location
-const generatePage = require('./src/page-template.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // TODO: Create an array of questions for user input
@@ -56,9 +58,10 @@ const promptUser = () => {
             message: 'Provide instructions and examples for use.'
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
-            message: 'An open source license protects contributors and users. Please provide the license you choose:'
+            message: 'An open source license protects contributors and users. Please choose from one of the following licenses:',
+            choices: ['MIT', 'Apache-2.0', 'BSD-3-Clause', 'BSD-2-Clause', 'GPL']
         },
         {
             type: 'input',
