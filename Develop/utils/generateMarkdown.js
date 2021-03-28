@@ -67,14 +67,14 @@ ${projectData.description}
 ${projectData.installation}
 ## Usage
 ${projectData.usage}
-${renderLicenseSection(projectData.license)}
+<br> ${renderLicenseSection(projectData.license)}
 ## Contributing
 ${projectData.contributing}
 ## Tests
 ${projectData.tests}
 ## Contact Info
-${projectData.github}
-${projectData.email}
+<a href="https://github.com/${projectData.github}>GitHub Profile</a>
+<br> ${projectData.email}
 `;
 }
 
