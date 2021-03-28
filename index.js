@@ -8,10 +8,9 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
-// TODO: Create an array of questions for user input
-const questions = [];
-
+// TODO: Create a function to initialize app
 const promptUser = () => {
+    // TODO: Create an array of questions for user input
     return inquirer.prompt([
         {
             type: 'input',
@@ -91,6 +90,7 @@ const promptUser = () => {
     ]);
 };
 
+// Function call to initialize app
 promptUser().then(projectData => {
     const yourReadMe = generateMarkdown(projectData);
 
@@ -101,11 +101,3 @@ promptUser().then(projectData => {
         console.log('Page created! Check out yourREADME.md to see it!');
     });
 });
-
-
-
-// // TODO: Create a function to initialize app
-// function init() { }
-
-// // Function call to initialize app
-// init();
